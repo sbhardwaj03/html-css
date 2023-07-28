@@ -1,0 +1,113 @@
+/*html*/
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Responsive Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Delicious Food</h1>
+    </header>
+    <div class="main-container">
+        <div class="menu">Our Menu</div>
+        <section class="food-section" id="chicken">
+            <div class="section-title">Chicken</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section class="food-section" id="beef">
+            <div class="section-title">Beef</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+        <section class="food-section" id="sushi">
+            <div class="section-title">Sushi</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </section>
+    </div>
+</body>
+
+</html>
+
+
+/*Css*/
+
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.food-section {
+    flex: 0 0 33.3333%;
+    position: relative;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+    margin: 5px;
+    padding: 10px;
+}
+
+.section-title {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #444;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+/* Media queries for different views */
+/* Desktop view */
+@media screen and (min-width: 992px) {
+    .menu {
+        width: 100%;
+    }
+}
+
+/* Tablet view */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .menu {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+/* Mobile view */
+@media screen and (max-width: 767px) {
+    .menu {
+        width: 100%;
+        margin: auto;
+    }
+    .food-section {
+        flex: 0 0 100%;
+    }
+}
