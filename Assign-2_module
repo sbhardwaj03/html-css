@@ -1,113 +1,295 @@
-/*html*/
+/*css*/
+@media (min-width:992px){
+.menu{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+font-size: 0.85rem;
+padding-top: 40px;
+}
+h1{
+    color: black;
+   font-size: 2rem;
+   text-align: center;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+ .chicken{
+    height: 160px;
+border: 2px solid black;
+    width: 30%;
+    background-color: gray;   
+    overflow: hidden;
+}
+.chicken p{
+    position: relative;
+    top: 10px;
+}
+.beef{
+    height: 160px;
+border: 2px solid black;
+    width: 30%;
+    background-color: gray;
+    overflow: hidden;
+}
+.beef p{
+    position: relative;
+    top: 10px;
+}
+.sushi{
+    height: 160px;
+border: 2px solid black;
+    width: 30%;
+    background-color: gray;
+    overflow: hidden;
+} 
+.sushi p{
+    position: relative;
+    top: 10px;
+}
+.ch{
+    height: 30px;
+    width: 30%;
+    background-color: palevioletred;
+    border: 2px solid black;
+    border-top: none;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-left: 69.5%;
+    text-align: center;
+}
+.be{
+    height: 30px;
+    width: 30%;
+    background-color:rgb(144, 40, 40);
+    border: 2px solid black;
+    border-top: none;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    margin-left: 69.5%;
+    text-align: center;
+}
+.su{
+    height: 30px;
+    width: 30%;
+    background-color: gold;
+    border: 2px solid black;
+    border-top: none;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-left: 69.5%;
+    text-align: center;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 0.85rem;
+        padding-top: 40px;
+        overflow: auto;
+        }
+        h1{
+            color: black;
+           font-size: 2rem;
+           text-align: center;
+           font-family:Georgia, 'Times New Roman', Times, serif;
+        
+        }
+         .chicken{
+            height: 160px;
+        border: 2px solid black;
+            width: 45%;
+            background-color: gray;
+            overflow: hidden;   
+        }
+        .chicken p{
+            position: relative;
+            top: 10px;
+        }
+        .beef{
+            height: 160px;
+        border: 2px solid black;
+            width: 45%;
+            background-color: gray;
+            overflow: hidden; 
+        }
+        .beef p{
+            position: relative;
+            top: 10px;
+        }
+        .sushi{
+            height: 160px;
+        border: 2px solid black;
+            width: 95%;
+            background-color: gray;
+            margin-top: 30px;
+            overflow: hidden; 
+        } 
+        .sushi p{
+            position: relative;
+            top: 10px;
+        }
+        .ch{
+            height: 30px;
+            width: 30%;
+            background-color: palevioletred;
+            border: 2px solid black;
+            border-top: none;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-left: 69.5%;
+            text-align: center;
+        }
+        .be{
+            height: 30px;
+            width: 30%;
+            background-color:rgb(144, 40, 40);
+            border: 2px solid black;
+            border-top: none;
+            font-weight: 700;
+            font-size: 1rem;
+            color: white;
+            margin-left: 69.5%;
+            text-align: center;
+        }
+        .su{
+            height: 30px;
+            width: 30%;
+            background-color: gold;
+            border: 2px solid black;
+            border-top: none;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-left: 69.5%;
+            text-align: center;
+        }
+}
+@media (max-width:767px){
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        font-size: 0.85rem;
+        padding-top: 40px;
+        }
+        h1{
+            color: black;
+           font-size: 2rem;
+           text-align: center;
+           font-family:Georgia, 'Times New Roman', Times, serif;
+        
+        }
+         .chicken{
+            height: 160px;
+        border: 2px solid black;
+            width: 80%;
+            background-color: gray;  
+            overflow: hidden;  
+        }
+        .chicken p{
+            position: relative;
+            top: 10px;
+        }
+        .beef{
+            height: 160px;
+        border: 2px solid black;
+            width: 80%;
+            background-color: gray;
+            overflow: hidden; 
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .beef p{
+            position: relative;
+            top: 10px;
+        }
+        .sushi{
+            height: 160px;
+        border: 2px solid black;
+            width: 80%;
+            background-color: gray;
+            overflow: hidden; 
+            margin-top: 15px;
+        } 
+        .sushi p{
+            position: relative;
+            top: 10px;
+        }
+        .ch{
+            height: 30px;
+            width: 30%;
+            background-color: palevioletred;
+            border: 2px solid black;
+            border-top: none;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-left: 69.5%;
+            text-align: center;
+        }
+        .be{
+            height: 30px;
+            width: 30%;
+            background-color:rgb(144, 40, 40);
+            border: 2px solid black;
+            border-top: none;
+            font-weight: 700;
+            font-size: 1rem;
+            color: white;
+            margin-left: 69.5%;
+            text-align: center;
+        }
+        .su{
+            height: 30px;
+            width: 30%;
+            background-color: gold;
+            border: 2px solid black;
+            border-top: none;
+            font-weight: 700;
+            font-size: 1rem;
+            margin-left: 69.5%;
+            text-align: center;
+        }
+}
+
+
+/html*/
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Responsive Site</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>menu</title>
+    <link rel="stylesheet" href="assign1.css"> 
 </head>
-
 <body>
-    <header>
-      
-    </header>
-    <div class="main-container">
-        <div class="menu">Our Menu</div>
-        <section class="food-section" id="chicken">
-            <div class="section-title">Chicken</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </section>
-        <section class="food-section" id="beef">
-            <div class="section-title">Beef</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </section>
-        <section class="food-section" id="sushi">
-            <div class="section-title">Sushi</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </section>
+    <h1>Our Menu</h1>
+    <div class="menu"> 
+        <div class="chicken">
+            <div class="ch">
+                Chicken
+            </div>
+         
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aspernatur dolores officia at nemo vel pariatur inventore veritatis. Aspernatur placeat earum debitis eos iure. Animi beatae accusamus deserunt ab asperiores?lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt adipisci at tempora! Nostrum repellendus doloribus necessitatibus assumenda dolores sint, soluta quos ullam ipsum nulla eveniet atque repudiandae, recusandae praesentium esse!</p>
+        </div>
+        <div class="beef">
+            <div class="be">
+                Beef
+            </div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse excepturi nam qui sit veniam assumenda repudiandae temporibus explicabo libero nisi repellat similique hic quaerat error laudantium voluptas nesciunt, sed est!lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam nihil aperiam, dolorum adipisci nesciunt ipsa qui porro illum dicta omnis perferendis iusto fugiat veritatis ab accusamus cum, mollitia ducimus est?</p>
+        </div>
+        <div class="sushi">
+            <div class="su">
+                Sushi
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas incidunt ab, quam ratione explicabo deserunt ipsa similique sunt voluptates nesciunt facilis dolores cumque provident! Voluptates minus excepturi earum esse eum.lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia accusamus temporibus necessitatibus. Facere, doloribus doloremque perferendis rem ducimus quod voluptatibus cupiditate deleniti natus quia sint, totam saepe hic, officia consequuntur?</p>
+        </div>
     </div>
+   
 </body>
-
 </html>
-
-
-/*Css*/
-
-/* Reset some default styles */
-body, h1, p {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-
-.main-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.menu {
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.food-section {
-    flex: 0 0 33.3333%;
-    position: relative;
-    border: 1px solid #000;
-    background-color: #f0f0f0;
-    margin: 5px;
-    padding: 10px;
-}
-
-.section-title {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: #444;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-}
-
-/* Media queries for different views */
-/* Desktop view */
-@media screen and (min-width: 992px) {
-    .menu {
-        width: 100%;
-    }
-}
-
-/* Tablet view */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .menu {
-        width: 50%;
-        margin: auto;
-    }
-}
-
-/* Mobile view */
-@media screen and (max-width: 767px) {
-    .menu {
-        width: 100%;
-        margin: auto;
-    }
-    .food-section {
-        flex: 0 0 100%;
-    }
-}
